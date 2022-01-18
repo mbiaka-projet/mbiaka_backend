@@ -1,8 +1,8 @@
 /* eslint-disable prettier/prettier */
 import { TypeOrmModuleOptions } from '@nestjs/typeorm';
-import dotenv from 'dotenv';
 
-dotenv.config();
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+require('dotenv').config();
 
 class ConfigService {
   constructor(private env: { [k: string]: string | undefined }) {}
